@@ -14,6 +14,9 @@
 		650000791BF8974900138E23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650000771BF8974900138E23 /* LaunchScreen.storyboard */; };
 		650000841BF8974900138E23 /* icartravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650000831BF8974900138E23 /* icartravelTests.swift */; };
 		6500008F1BF8974900138E23 /* icartravelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6500008E1BF8974900138E23 /* icartravelUITests.swift */; };
+		65889DDB1C0390AF002EA35B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65889DDA1C0390AF002EA35B /* LoginViewController.swift */; };
+		65889DDD1C039389002EA35B /* VerifyPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65889DDC1C039389002EA35B /* VerifyPhoneNumberViewController.swift */; };
+		65889DDF1C0396AA002EA35B /* FillVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65889DDE1C0396AA002EA35B /* FillVerifyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6500008A1BF8974900138E23 /* icartravelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icartravelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6500008E1BF8974900138E23 /* icartravelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = icartravelUITests.swift; sourceTree = "<group>"; };
 		650000901BF8974900138E23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65889DDA1C0390AF002EA35B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		65889DDC1C039389002EA35B /* VerifyPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		65889DDE1C0396AA002EA35B /* FillVerifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillVerifyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,11 @@
 				6500006E1BF8974900138E23 /* AppDelegate.swift */,
 				650000701BF8974900138E23 /* ViewController.swift */,
 				650000721BF8974900138E23 /* Main.storyboard */,
-				650000751BF8974900138E23 /* Assets.xcassets */,
 				650000771BF8974900138E23 /* LaunchScreen.storyboard */,
+				65889DDE1C0396AA002EA35B /* FillVerifyViewController.swift */,
+				650000751BF8974900138E23 /* Assets.xcassets */,
+				65889DDC1C039389002EA35B /* VerifyPhoneNumberViewController.swift */,
+				65889DDA1C0390AF002EA35B /* LoginViewController.swift */,
 				6500007A1BF8974900138E23 /* Info.plist */,
 			);
 			path = icartravel;
@@ -256,8 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65889DDB1C0390AF002EA35B /* LoginViewController.swift in Sources */,
 				650000711BF8974900138E23 /* ViewController.swift in Sources */,
+				65889DDF1C0396AA002EA35B /* FillVerifyViewController.swift in Sources */,
 				6500006F1BF8974900138E23 /* AppDelegate.swift in Sources */,
+				65889DDD1C039389002EA35B /* VerifyPhoneNumberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +494,7 @@
 				650000951BF8974900138E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		650000961BF8974900138E23 /* Build configuration list for PBXNativeTarget "icartravelTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +503,7 @@
 				650000981BF8974900138E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		650000991BF8974900138E23 /* Build configuration list for PBXNativeTarget "icartravelUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +512,7 @@
 				6500009B1BF8974900138E23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
