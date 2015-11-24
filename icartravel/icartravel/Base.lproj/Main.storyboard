@@ -5,6 +5,40 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
+        <!--无法登录?-->
+        <scene sceneID="mFZ-r6-Ahe">
+            <objects>
+                <viewController id="7Ql-ax-kvm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yIh-pb-Kry">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号码" textAlignment="natural" minimumFontSize="17" id="a6g-9g-xky">
+                                <rect key="frame" x="60" y="155" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lwu-ct-Vea">
+                                <rect key="frame" x="70" y="193" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="下一步"/>
+                                <connections>
+                                    <action selector="VerifyPhoneNumber" destination="Zpo-Ly-j62" eventType="touchUpInside" id="cBD-KG-RIM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="无法登录?" id="gv4-bT-g53"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzr-pA-uef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="1136"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -43,7 +77,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6bR-pl-6D3">
-                        <barButtonItem key="leftBarButtonItem" title="无法登录？" id="Kx0-Q3-Gbu"/>
+                        <barButtonItem key="leftBarButtonItem" title="无法登录？" id="Kx0-Q3-Gbu">
+                            <connections>
+                                <segue destination="7Ql-ax-kvm" kind="push" id="vg5-Vc-89Z"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="新用户" id="Vsn-ps-EcP">
                             <connections>
                                 <segue destination="Zpo-Ly-j62" kind="push" id="TZ6-kl-BuT"/>
@@ -75,7 +113,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Vm-G5-M7A">
@@ -136,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdH-30-ZfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="957" y="346"/>
+            <point key="canvasLocation" x="955" y="346"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qb8-zO-0KV">
@@ -155,7 +193,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t06-DK-YiV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="346"/>
+            <point key="canvasLocation" x="562" y="-462"/>
         </scene>
     </scenes>
 </document>
