@@ -10,8 +10,10 @@ import Foundation
 import UIKit
 
 class VerifyPhoneNumberViewController : UIViewController {
+    @IBOutlet weak var phoneNumber: UITextField!
     
-    @IBAction func VerifyPhoneNumber() {
+    @IBAction func verifyPhoneNumber() {
+        //self.PhoneNumber.
         //向服务器发送验证手机号码的请求。
         
         //显示是否发送成功，飘字。
